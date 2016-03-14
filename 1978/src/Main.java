@@ -7,7 +7,7 @@ public class Main {
     private static TreeSet<Integer> cache = new TreeSet<Integer>();
 
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner sc = new Scanner(new File("1978/src/input"));
+        Scanner sc = new Scanner(new File("1978/input"));
 //        Scanner sc = new Scanner(System.in);
         int pNum = sc.nextInt();
         int primalCnt = 0;

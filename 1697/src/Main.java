@@ -8,7 +8,7 @@ public class Main {
     private static int sol = Integer.MAX_VALUE;
 
     public static void main(String args[]) throws FileNotFoundException {
-        Scanner sc = new Scanner(new File("1697/src/input"));
+        Scanner sc = new Scanner(new File("1697/input"));
 //        Scanner sc = new Scanner(System.in);
 
         int posSW = sc.nextInt();

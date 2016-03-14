@@ -7,7 +7,7 @@ public class Main {
     private static final String chessman = "F";
 
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner sc = new Scanner(new File("1100/src/input"));
+        Scanner sc = new Scanner(new File("1100/input"));
 //        Scanner sc = new Scanner(System.in);
         int count = 0;
 
