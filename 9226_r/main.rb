@@ -1,21 +1,9 @@
-inputs = Array.new
-suffix = 'ay'
+while string = gets.strip
+  break if string == '#'
 
-File.readlines('input').each do |line|
-  inputs.push(line)
+  index = string.index(/[aeiou]/) || 0
+  first = string[0, index]
+  last = string[index, string.length]
+
+  puts "#{last}#{first}ay"
 end
-
-inputs.each do |input|
-  input.strip!
-
-  if input == '#'
-    break
-  end
-
-  index = input.index(/[aeiou]/) || 0
-  first = input[0, index]
-  last = input[index, input.length]
-
-  puts "#{first}#{last}#{suffix}"
-end
-
