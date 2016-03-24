@@ -9,8 +9,8 @@ size.times do
   hash["#{number}"] = hash["#{number}"]+1
 end
 
-max = hash.max_by(2){ |key, value| value }
-min = hash.min_by{ |key, value| key}
+max = hash.values.max
+max_values = hash.select {|key, value| value == max}
+min = max_values.min_by { |key, value| key.to_i }
 
-puts "#{max}"
-puts "#{min}"
+puts "#{min[0]}"
